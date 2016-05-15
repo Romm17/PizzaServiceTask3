@@ -1,5 +1,6 @@
 package infrastructure;
 
+import org.springframework.util.ClassUtils;
 import service.OrderService;
 
 import java.lang.annotation.Annotation;
@@ -19,7 +20,7 @@ public class ProxyForBenchmark {
     public Object createProxy() {
         Object proxedBean = Proxy.newProxyInstance(
                 bean.getClass().getClassLoader(),
-                new Class[] {OrderService.class},
+                ClassUtils.getAllInterfaces(bean),
                 (proxy, method, args) -> {
                     Object res = null;
                     Benchmark a = bean.getClass().getMethod(method.getName(),

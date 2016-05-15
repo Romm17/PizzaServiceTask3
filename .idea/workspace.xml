@@ -67,8 +67,8 @@
       <file leaf-file-name="ProxyForBenchmark.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/ProxyForBenchmark.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -911,12 +911,12 @@
       <workItem from="1461856263921" duration="8355000" />
       <workItem from="1463070163723" duration="5579000" />
       <workItem from="1463081325015" duration="14000" />
-      <workItem from="1463304746197" duration="11510000" />
+      <workItem from="1463304746197" duration="11930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59443000" />
+    <option name="totallyTimeSpent" value="59863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1424,8 +1424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/infrastructure/ProxyForBenchmark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="201">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding />
         </state>
       </provider>
