@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="repository"/>
+
+    <bean class="repository.LocalPizzaRepository" name="pizzaRepository" init-method="init">
+        <property name="pizzaList">
+            <list>
+                <bean class="domain.Pizza">
+                    <constructor-arg value="Marinara"/>
+                    <property name="type" value="Neapolitano"/>
+                    <property name="price" value="10"/>
+                </bean>
+                <bean class="domain.Pizza">
+                    <constructor-arg value="Margherita"/>
+                    <property name="type" value="Neapolitano"/>
+                    <property name="price" value="20"/>
+                </bean>
+                <bean class="domain.Pizza">
+                    <constructor-arg value="SimpleDeepDish"/>
+                    <property name="type" value="DeepDish"/>
+                    <property name="price" value="30"/>
+                </bean>
+                <bean class="domain.Pizza">
+                    <constructor-arg value="WithOil"/>
+                    <property name="type" value="Sicilian"/>
+                    <property name="price" value="40"/>
+                </bean>
+            </list>
+        </property>
+
+    </bean>
+
+    <!--bean class="repository.LocalOrderRepository" name="orderRepository">
+
+    </bean-->
+
+</beans>
