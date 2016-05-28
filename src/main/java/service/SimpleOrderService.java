@@ -35,6 +35,11 @@ public class SimpleOrderService implements OrderService {
     }
 
     @Override
+    public Order getOrderById(Integer id) {
+        return orderRepository.getOrderByID(id);
+    }
+
+    @Override
     public List<Order> getAllOrders() {
         return orderRepository.getOrders();
     }
@@ -54,6 +59,7 @@ public class SimpleOrderService implements OrderService {
         newOrder.setPizzaList(pizzas);
 
         orderRepository.saveOrder(newOrder); // set Order Id and save Order to in-memory list
+        System.out.println(newOrder);
         return newOrder;
 
     }

@@ -42,8 +42,6 @@
 
     </bean>
 
-    <!--bean class="repository.LocalOrderRepository" name="orderRepository">
-
-    </bean-->
+    <bean class="repository.LocalOrderRepository" name="orderRepository" init-method="init"/>
 
 </beans>

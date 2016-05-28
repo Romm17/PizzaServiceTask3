@@ -17,12 +17,12 @@ public class Order {
 
     private static int count = 1;
 
-
     private Integer id;
     private LocalDateTime creationTime;
     private String name;
     private List<Pizza> pizzaList;
     private Customer customer;
+    private Double price;
 
     public Order() {
         id = count++;
@@ -34,6 +34,7 @@ public class Order {
         this();
         this.customer = customer;
         this.pizzaList = pizzaList;
+        price = getPrice();
     }
 
     public static int getCount() {
@@ -64,14 +65,18 @@ public class Order {
         this.name = name;
     }
 
-    public double getTotalPrice() {
+    public double getPrice() {
         return pizzaList.stream().mapToDouble(Pizza::getPrice).sum();
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     @Override
     public String toString() {
         String res = "order { name : " + name + ", customer : "
-                    + customer.toString()
+                    + (customer == null ? "null" : customer.toString())
                     + ", pizzas : {";
         Iterator<Pizza> i = pizzaList.iterator();
         for (;i.hasNext();) {
@@ -105,5 +110,6 @@ public class Order {
 
     public void setPizzaList(List<Pizza> pizzaList) {
         this.pizzaList = pizzaList;
+        price = getPrice();
     }
 }

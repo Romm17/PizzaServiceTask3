@@ -25,10 +25,10 @@ public class LocalPizzaRepository implements PizzaRepository {
 
     public void init(){
 
-        pizzaList.add(new Pizza(1, PizzaType.Neapolitano, "Marinara", 10.0));
-        pizzaList.add(new Pizza(2, PizzaType.Neapolitano, "Margherita", 20.0));
-        pizzaList.add(new Pizza(3, PizzaType.DeepDish, "SimpleDeepDish", 30.0));
-        pizzaList.add(new Pizza(4, PizzaType.Sicilian, "WithOil", 40.0));
+//        pizzaList.add(new Pizza(1, PizzaType.Neapolitano, "Marinara", 10.0));
+//        pizzaList.add(new Pizza(2, PizzaType.Neapolitano, "Margherita", 20.0));
+//        pizzaList.add(new Pizza(3, PizzaType.DeepDish, "SimpleDeepDish", 30.0));
+//        pizzaList.add(new Pizza(4, PizzaType.Sicilian, "WithOil", 40.0));
 
     }
 

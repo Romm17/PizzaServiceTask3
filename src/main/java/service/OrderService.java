@@ -10,9 +10,11 @@ import java.util.List;
  */
 public interface OrderService {
 
+    Order getOrderById(Integer id);
+
     List<Order> getAllOrders();
 
-    Order placeNewOrder(Customer customer, Integer... pizzasID);
+    Order placeNewOrder(Customer customer, Integer ... pizzasID);
 
     Order addPizzaToOrder(Order order, Integer pizzaId);
 

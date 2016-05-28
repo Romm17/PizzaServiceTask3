@@ -1,6 +1,8 @@
 package repository;
 
+import domain.Customer;
 import domain.Order;
+import domain.Pizza;
 import org.springframework.stereotype.Repository;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,6 +21,10 @@ public class LocalOrderRepository implements OrderRepository {
 
         orderList = new LinkedList<>();
 
+    }
+
+    public void init() {
+        saveOrder(new Order(new Customer(1, "Roma"), new LinkedList<>()));
     }
 
     @Override

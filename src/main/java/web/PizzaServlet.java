@@ -57,8 +57,10 @@ public class PizzaServlet extends HttpServlet {
             out.println("<h3>" + pizzass + "</h3>");
 
             if (pizzass != null) {
+                out.println("<h2>orders</h2>");
                 Order order = orderService.placeNewOrder(null, SimpleServlet.parseIntArrayString(pizzass));
                 out.println("<h2>" + order + "</h2>");
+                out.println("<h2>orders</h2>");
             }
 
             out.println("</body>");

@@ -1,5 +1,7 @@
 infrastructure/Config.class
+service/SimplePizzaService.class
 infrastructure/JavaConfig.class
+web/PizzaController.class
 domain/Customer.class
 infrastructure/BenchmarkPostProcessor.class
 domain/Pizza.class
@@ -17,7 +19,9 @@ infrastructure/JavaConfigApplicationContext$BeanBuilder.class
 repository/OrderRepository.class
 PizzaApp.class
 web/SimpleServlet.class
+web/PizzaServlet.class
 service/OrderService.class
 SpringPizzaApp.class
+service/PizzaService.class
 infrastructure/ProxyForBenchmark.class
 infrastructure/ServiceLocator.class

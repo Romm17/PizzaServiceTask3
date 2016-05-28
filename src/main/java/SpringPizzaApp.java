@@ -27,7 +27,7 @@ public class SpringPizzaApp {
 
         Order order = orderService.placeNewOrder(customer, 1, 2);
         order = orderService.addPizzaToOrder(order, 3);
-        System.out.println("Price: " + order.getTotalPrice());
+        System.out.println("Price: " + order.getPrice());
 
         List<Order> orders = orderService.getAllOrders();
         orders.stream().forEach(System.out::println);

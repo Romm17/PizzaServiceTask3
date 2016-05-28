@@ -13,32 +13,35 @@
         <property name="pizzaList">
             <list>
                 <bean class="domain.Pizza">
+                    <constructor-arg value="1"/>
                     <constructor-arg value="Marinara"/>
                     <property name="type" value="Neapolitano"/>
                     <property name="price" value="10"/>
                 </bean>
                 <bean class="domain.Pizza">
+                    <constructor-arg value="2"/>
                     <constructor-arg value="Margherita"/>
                     <property name="type" value="Neapolitano"/>
                     <property name="price" value="20"/>
                 </bean>
                 <bean class="domain.Pizza">
+                    <constructor-arg value="3"/>
                     <constructor-arg value="SimpleDeepDish"/>
                     <property name="type" value="DeepDish"/>
                     <property name="price" value="30"/>
                 </bean>
                 <bean class="domain.Pizza">
+                    <constructor-arg value="4"/>
                     <constructor-arg value="WithOil"/>
                     <property name="type" value="Sicilian"/>
                     <property name="price" value="40"/>
                 </bean>
             </list>
         </property>
+        <property name="autoIncrement" value="5"/>
 
     </bean>
 
-    <!--bean class="repository.LocalOrderRepository" name="orderRepository">
-
-    </bean-->
+    <bean class="repository.LocalOrderRepository" name="orderRepository" init-method="init"/>
 
 </beans>
